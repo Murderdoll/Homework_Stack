@@ -3,7 +3,6 @@
 
 #include "stdafx.h"
 #include <iostream>
-#include <cassert>
 
 using namespace std;
 
@@ -45,8 +44,9 @@ public:
 	// функция, убирающая значение из стека, и проверяющая номер элемента с вершиной стека на пустоту стека (pop-убираем сверху)
 	T pop()
 	{
+		if (count_ == 0) //проверяем размер стека
+			throw runtime_error("Stack Empty!");
 		count_--;
-		assert(count_ != -1);
 		*(array_ + count_ ) = NULL;
 		return array_[count_];
 	}
