@@ -4,6 +4,8 @@ using namespace std;
 
 void main()
 {
+	try
+	{
 	Stack<int> Ob(3);
 	Ob.push(1);
 	Ob.push(2);
@@ -25,5 +27,10 @@ void main()
 	Ob.pop();
 	cout << "Now Stack is empty." << endl;
 	//Ob.pop(); // Вызываем аварийную остановку программы, выходя за границы стека
+        }
+	catch (const exception& e)  	//обработка исключений
+	{
+		cout << e.what() << endl;
+	}
 	system("pause");
 }
