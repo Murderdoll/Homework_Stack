@@ -56,7 +56,7 @@ public:
 		T* array_2 = new T[array_size_ * 2]; // Определеям указатель array_2 на новый массив с уввеличенным размером 
 		for (int i = 0; i < array_size_; i++)// Переносим в новый массив элементы из старого
 		{
-			*(array_2 + i) = *(array_ + i);
+			array_2[i] = array_[i];
 		}
 		array_size_ = array_size_ * 2;
 		delete[] array_;// освобождаем память
