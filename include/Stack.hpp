@@ -1,6 +1,3 @@
-#ifndef Stack_h
-#define Stack_h
-
 #include "stdafx.h"
 #include <iostream>
 
@@ -17,12 +14,8 @@ private:
 public:
 	Stack() : array_size_(size_t(10)), array_(new T[10]), count_(0) // в целях оптимизации работы программы
 	{ }
-	Stack(size_t s) : array_size_(s)
-	{
-		array_ = new T[array_size_]; // массив array_ размером array_size_, который будем забивать
-		count_ = 0; 
-	}
-
+	Stack(size_t s) : array_size_(s) , array_(new T[s]), count_(0)
+	{}
 
 	// функция, показывающая существующие значения в объекте
 	void showMe(size_t i)
@@ -61,4 +54,3 @@ public:
 	}
 };
 
-#endif /* Stack_h */
