@@ -18,6 +18,11 @@ private:
 	size_t array_size_; // размер стека
 
 public:
+	Stack()
+	{ 
+		array_size_ = 10;
+		array_ = new T[array_size_]; //выделение памяти под 100 "ячеек" типа Т
+	}
 	Stack(size_t s) : array_size_(s)
 	{
 		array_ = new T[array_size_]; // массив array_ размером array_size_, который будем забивать
