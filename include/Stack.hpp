@@ -11,15 +11,12 @@ class Stack
 {
 private:
 	T* array_; // массив который будем забивать ,array_-указатель на массив,который лежит в куче
-	size_t count_; // номер элемента, добавляемый в кучу
+	size_t count_=0; // номер элемента, добавляемый в кучу
 	size_t array_size_; // размер стека
 
 public:
-	Stack()
-	{ 
-		array_size_ = 10;
-		array_ = new T[array_size_]; 
-	}
+	Stack() : array_size_(size_t(10)), array_(new T[10]), count_(0) // в целях оптимизации работы программы
+	{ }
 	Stack(size_t s) : array_size_(s)
 	{
 		array_ = new T[array_size_]; // массив array_ размером array_size_, который будем забивать
