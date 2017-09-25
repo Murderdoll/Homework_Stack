@@ -3,8 +3,6 @@
 
 #include "stdafx.h"
 #include <iostream>
-#include <stdio.h>
-#include <stdexcept>
 #include <cassert>
 
 using namespace std;
