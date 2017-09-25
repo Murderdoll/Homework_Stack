@@ -54,6 +54,10 @@ public:
 		delete[] array_;// освобождаем память
 		array_ = array_2;//переопределяем указатель
 	}
+	size_t count() const // const потому что метод ничего не изменяет
+	{ 
+		return count_;
+	}
 };
 
 #endif /* STACK_HPP */
