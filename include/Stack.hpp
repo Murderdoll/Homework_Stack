@@ -28,8 +28,7 @@ public:
 	{
 		if (count_ == array_size_)
 			StackDuplication();
-		*(array_ + count_) = d;
-		count_++;
+		array_[count_++] = d;
 	}
 	// функция, убирающая значение из стека, и проверяющая номер элемента с вершиной стека на пустоту стека (pop-убираем сверху)
 	T pop()
