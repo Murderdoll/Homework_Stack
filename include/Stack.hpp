@@ -1,3 +1,6 @@
+#ifndef STACK_HPP
+#define STACK_HPP
+
 #include "stdafx.h"
 #include <iostream>
 
@@ -53,3 +56,4 @@ public:
 	}
 };
 
+#endif /* STACK_HPP */
