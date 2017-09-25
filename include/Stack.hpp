@@ -21,7 +21,7 @@ public:
 	Stack()
 	{ 
 		array_size_ = 10;
-		array_ = new T[array_size_]; //выделение памяти под 100 "ячеек" типа Т
+		array_ = new T[array_size_]; 
 	}
 	Stack(size_t s) : array_size_(s)
 	{
