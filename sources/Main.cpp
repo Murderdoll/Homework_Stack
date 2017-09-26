@@ -2,7 +2,7 @@
 #include "Stack.hpp"
 using namespace std;
 
-void main()
+int main()
 {
 	try
 	{
@@ -32,5 +32,5 @@ void main()
 	{
 		cout << e.what() << endl;
 	}
-	system("pause");
+	return 0;
 }
